@@ -9,6 +9,7 @@ html,
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=M+PLUS+Rounded+1c&family=Poiret+One&family=Rajdhani&display=swap");
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .main {
@@ -222,6 +223,7 @@ html {
 
   .home_container {
     left: -10%;
+    top: 17%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -229,10 +231,10 @@ html {
     background-position: 25%;
   }
   .home_container {
-    left: -18%;
+    left: -5%;
   }
   .home_container h1 {
-    width: 450px;
+    width: 300px;
     font-size: 80px;
   }
 }
@@ -878,7 +880,8 @@ a:hover {
   border: unset;
   border-bottom: 1px solid white;
   color: white;
-  outline: none;
+  -webkit-appearance: none;
+  outline: 0;
 }
 .contact_field div textarea {
   box-sizing: border-box;
