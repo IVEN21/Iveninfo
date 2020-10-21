@@ -3,6 +3,7 @@ html,
 *::before {
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=M+PLUS+Rounded+1c&family=Poiret+One&family=Rajdhani&display=swap");
@@ -31,7 +32,8 @@ html {
 .logo {
   font-weight: 300;
   font-size: 50px;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Sacramento", cursive;
+
   margin-left: 100px;
   color: #cdd9c7;
   transition: color 0.2s ease-in, opacity 0.3s ease-out;
@@ -207,29 +209,36 @@ html {
     left: 10%;
   }
 }
-@media screen and (max-width: 880px) {
-  .Home {
-    background-position: 20%;
-  }
+@media screen and (max-width: 1100px) {
   .home_container h1 {
     white-space: pre-wrap;
     line-height: 100px;
   }
+}
+@media screen and (max-width: 880px) {
+  .Home {
+    background-position: 20%;
+  }
+
   .home_container {
     left: -10%;
   }
 }
 @media screen and (max-width: 420px) {
+  .Home {
+    background-position: 25%;
+  }
   .home_container {
     left: -18%;
   }
   .home_container h1 {
-    font-size: 90px;
+    width: 450px;
+    font-size: 80px;
   }
 }
 /*about*/
 .about {
-  height: 1000px;
+  height: 900px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -791,7 +800,7 @@ a:hover {
 
 @media screen and (max-width: 840px) {
   .portfolio {
-    height: 1200px;
+    height: 1000px;
   }
   .port_container {
     width: 400px;
@@ -869,6 +878,7 @@ a:hover {
   border: unset;
   border-bottom: 1px solid white;
   color: white;
+  outline: none;
 }
 .contact_field div textarea {
   box-sizing: border-box;
@@ -886,7 +896,7 @@ a:hover {
   transform: scaleX(0);
   transition: all 0.3s ease-out;
 }
-.content::after {
+.content_input::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -897,22 +907,14 @@ a:hover {
   transform: scaleX(0);
   transition: all 0.3s ease-out;
 }
-.content:hover::after {
+.content_input:hover::after {
   transform: scaleX(1);
 }
 
-.content:focus-within::after {
-  background-color: #635359;
-  transform: scaleX(1);
-}
 .div_input:hover::after {
   transform: scaleX(1);
 }
 
-.div_input:focus-within::after {
-  background-color: #635359;
-  transform: scaleX(1);
-}
 .contact_field div input:focus,
 .contact_field div textarea:focus {
   outline: none;
