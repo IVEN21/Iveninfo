@@ -31,7 +31,7 @@ function Portfolio({ setActive_nav }) {
                                 <p className="card__body">{pornlo_skills.map((item) => <label key={item}>{item}</label>)}</p>
                             </div>
                         </div>
-                        <a href="https://pornlo.herokuapp.com/" rel="noopener noreferrer" target="_blank" style={{ fontSize: "25px" }}>Link Here</a>
+                        <a href="https://pornlo.herokuapp.com/" rel="noopener noreferrer" target="_blank" style={{ fontSize: "21px" }}>Link Here</a>
                     </div>
                     <div className="card gallery" onClick={() => setgalon(!galon)}>
                         <div className="content" style={{ transform: galon ? "rotateY(180deg)" : "" }} >
@@ -46,7 +46,7 @@ function Portfolio({ setActive_nav }) {
                                 <p className="card__body">{gallery_skiils.map(item => <label key={item}>{item}</label>)}</p>
                             </div>
                         </div>
-                        <a href="http://dylanz-art.herokuapp.com/" target="_blank" rel="noopener noreferrer" style={{ fontSize: "25px" }}>Link Here</a>
+                        <a href="http://dylanz-art.herokuapp.com/" target="_blank" rel="noopener noreferrer" style={{ fontSize: "21px" }}>Link Here</a>
                     </div>
                 </div>
             </div></Waypoint >
