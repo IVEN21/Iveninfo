@@ -270,12 +270,13 @@ html,
 }
 .about_img {
   grid-area: pic;
-  background-image: url("./imgs/hs.png");
+  background-image: url("./imgs/hs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  filter: grayscale(0%);
 }
 
 .cards_container div {
@@ -874,7 +875,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #19161a;
+  background-color: rgba(96, 110, 93, 0.3);
   z-index: 2;
   display: flex;
   justify-content: center;
