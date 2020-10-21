@@ -413,11 +413,11 @@ html,
 }
 @media screen and (max-width: 520px) {
   .about {
-    height: 1100px;
+    height: 1000px;
   }
   .about_grid {
     grid-template-columns: 360px;
-    grid-template-rows: 550px 357px 50px;
+    grid-template-rows: 450px 357px 50px;
   }
   .about_img {
     width: 360px;
@@ -599,8 +599,8 @@ html,
 
 @media screen and (max-width: 550px) {
   .skills {
-    height: 900px;
-    padding-top: 50px;
+    height: 850px;
+    padding-top: 60px;
   }
 
   .skill_grid {
@@ -807,7 +807,7 @@ a:hover {
   }
   .port_container {
     width: 400px;
-    height: 1000px;
+    height: 900px;
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 200px auto auto;
@@ -840,15 +840,18 @@ a:hover {
   }
   .card.pornlo {
     transform: scale(0.8);
+    height: 265px;
   }
   .card.gallery {
     transform: scale(0.8);
+    height: 400px;
   }
 }
 /*Contact*/
 .contact {
   padding-bottom: 100px;
   height: 700px;
+  position: relative;
 }
 .contact_field {
   display: grid;
@@ -863,6 +866,27 @@ a:hover {
     "content content"
     "btn btn";
   grid-gap: 50px 80px;
+}
+
+.contact_loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #19161a;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css-1w1pvur::after {
+  content: "Sending...";
+  position: absolute;
+  bottom: 20px;
+  left: 65px;
+  color: #d1f7c6;
+  font-size: 22px;
 }
 .contact_field div {
   display: flex;
@@ -973,7 +997,8 @@ a:hover {
     padding-bottom: 150px;
   }
 }
-
+@media screen and (max-width: 420px) {
+}
 /*footer*/
 .footer {
   display: flex;

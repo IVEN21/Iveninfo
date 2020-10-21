@@ -3,7 +3,7 @@ export const infos = [
     id: 0,
     title: "Who Am I",
     info:
-      "Hi, my name is Iven Zhang.  I’m currently enrolled in Lehigh University as a sophsomore. A Hard-working engineering undergraduate and pursuing a bachelor of science degree in Computer Science Engineering. My dream is to become a software engineer, whether it’s a game developer, a fullstack web developer, or an application developer. ",
+      "Hi, my name is Iven Zhang.  I’m currently enrolled at Lehigh University as a sophsomore. A Hard-working engineering undergraduate and pursuing a bachelor of science degree in Computer Science Engineering. My dream is to become a software engineer, whether it’s a game developer, a fullstack web developer, or an application developer. ",
   },
   {
     id: 1,

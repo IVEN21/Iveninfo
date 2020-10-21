@@ -11,7 +11,7 @@ const Home = ({ setNav, setActive_nav }) => {
             setActive_nav("home")
             setNav(true)
         }} onLeave={() => setNav(false)}
-            topOffset="90%"
+            topOffset="99%"
         >
             <div className="Home main" id="home" >
                 <div className="home_container">

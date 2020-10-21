@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { animated, useSpring } from "react-spring"
 import IconNav from "../Common/IconNav"
 function Navbar({ nav, active_nav }) {
 
-
+    //listen on window width
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        function handleResize() {
+            setWidth(window.innerWidth);
+        }
+        window.addEventListener("resize", handleResize);
+        return (_) => {
+            window.removeEventListener("resize", handleResize);
+        };
+    });
     const nav_animation = useSpring({
-        backgroundColor: nav ? "rgba(0,0,0,0)" : "rgba(50,50,50,1)",
-        height: nav ? "120px" : "85px",
+        backgroundColor: nav && width > 420 ? "rgba(0,0,0,0)" : "rgba(50,50,50,1)",
+        height: nav && width > 420 ? "120px" : "85px",
         config: {
             duration: 300
         }
