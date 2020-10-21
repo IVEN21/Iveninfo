@@ -25,7 +25,7 @@ class Contact extends Component {
             { cs: "name div_input", ph: "Name*" },
             { cs: "email div_input", ph: "Email*" },
             { cs: "subject div_input", ph: "Subject*" },
-            { cs: "content div_input ", ph: "Content*" },
+            { cs: "content ", ph: "Content*" },
 
         ]
         return (
