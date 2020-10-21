@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "font-awesome/css/font-awesome.css";
+import "./App.css";
+import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Portfolio from "./Components/Portfolio";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
+  const [nav, setNav] = useState(false);
+  const [active_nav, setActive_nav] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar nav={nav} active_nav={active_nav} />
+
+      <Home setNav={setNav} setActive_nav={setActive_nav} />
+      <About setActive_nav={setActive_nav} />
+      <Skills setActive_nav={setActive_nav} />
+      <Portfolio setActive_nav={setActive_nav} />
+      <Contact setActive_nav={setActive_nav} />
+      <Footer />
     </div>
   );
 }
