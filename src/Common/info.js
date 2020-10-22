@@ -1,7 +1,7 @@
 export const infos = [
   {
     id: 0,
-    title: "Who is this?",
+    title: "Who am I?",
     info:
       "Hi, my name is Iven Zhang.  I’m currently enrolled at Lehigh University as a sophomore. A Hard-working engineering undergraduate and pursuing a bachelor of science degree in Computer Science Engineering. Looking forward into the profession of computer science realm.",
   },
