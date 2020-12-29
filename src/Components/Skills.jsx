@@ -9,10 +9,10 @@ function Skills({ setActive_nav }) {
     const skills = [
         { id: 0, name: 'C/C++', level: 60 },
         { id: 2, name: 'Javascript', level: 80 },
-        { id: 1, name: 'Java', level: 57 },
+        { id: 1, name: 'Java', level: 65 },
         { id: 3, name: 'Node.js', level: 60 },
         { id: 4, name: 'HTML', level: 76 },
-        { id: 5, name: 'CSS', level: 73 },
+        { id: 5, name: 'CSS', level: 74 },
         { id: 6, name: 'SQL', level: 60 },
         { id: 7, name: 'Git', level: 65 },
         { id: 8, name: 'Excel', level: 68 },
