@@ -273,10 +273,11 @@ html,
   background-image: url("./imgs/hs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  filter: grayscale(0%);
+  filter: brightness(110%);
 }
 
 .cards_container div {
