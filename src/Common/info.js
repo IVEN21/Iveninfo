@@ -26,6 +26,6 @@ export const infos = [
 ];
 
 export function getInfos() {
-  return infos.filter((g) => g);
+  return infos.filter((c) => c);
 }
 's
