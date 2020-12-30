@@ -28,4 +28,4 @@ export const infos = [
 export function getInfos() {
   return infos.filter((c) => c);
 }
-'s
+
