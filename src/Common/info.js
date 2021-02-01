@@ -17,12 +17,7 @@ export const infos = [
     info:
       "Besides coding on my daily basis, I like to engage in sports. I play tennis and I served as a tennis captain in high school. I also engage in music, guitar and piano are my favorite instruments. ",
   },
-  {
-    id: 3,
-    title: "Game",
-    info:
-      "One of my most enthusiastic game I ever played is League of Legend. Not only I enjoyed playing the game, but I also wanted to be part of the game development in Riot Company.",
-  },
+
 ];
 
 export function getInfos() {
