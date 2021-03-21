@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Port_card = ({ label, img, url, attr, description }) => {
+const PortCard = ({ label, img, url, attr, description }) => {
   const [flip, setflip] = useState(false);
 
   return (
@@ -39,4 +39,4 @@ const Port_card = ({ label, img, url, attr, description }) => {
   );
 };
 
-export default Port_card;
+export default PortCard;

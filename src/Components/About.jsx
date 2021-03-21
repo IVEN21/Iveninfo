@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import handsome from "../imgs/hs.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Card from "../Components/assets/card";
-import { getInfos } from "../Components/assets/info.js";
+import Card from "./assets/card";
+import { getInfos } from "./assets/info.js";
 const About = ({ setActive_nav }) => {
   const [active_card, set_active_card] = useState(1);
   const numberOf_cards = [1, 2, 3];

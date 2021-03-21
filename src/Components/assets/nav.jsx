@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { animated, useSpring } from "react-spring";
-import Nav_icon from "../assets/Nav_icon";
+import NavIcon from "./NavIcon";
 function Nav({ nav, active_nav }) {
   //listen on window width
   const [width, setWidth] = useState(window.innerWidth);
@@ -23,7 +23,7 @@ function Nav({ nav, active_nav }) {
   return (
     <animated.nav className="nav-bar" style={nav_animation}>
       <span className="nav__logo">iven</span>
-      <Nav_icon active_nav={active_nav} />
+      <NavIcon active_nav={active_nav} />
       <ul className="nav-bar__items">
         <li>
           <a href="#home" className={active_nav === "home" ? "active" : ""}>

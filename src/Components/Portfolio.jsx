@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Port_card from "../Components/assets/Port_card";
+import PortCard from "./assets/PortCard";
 import pornlo from "../imgs/pornlo.png";
 import gallery from "../imgs/gallery.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,7 +35,7 @@ function Portfolio({ setActive_nav }) {
             <p>These are all the web projects I had worked so far.</p>
           </header>
 
-          <Port_card
+          <PortCard
             label="Pornlo"
             img={pornlo}
             url="https://pornlo.herokuapp.com/"
@@ -43,7 +43,7 @@ function Portfolio({ setActive_nav }) {
             description="A platform for watching 18+ content."
           />
 
-          <Port_card
+          <PortCard
             label="Gallery"
             img={gallery}
             url="http://dylanz-art.herokuapp.com/"
