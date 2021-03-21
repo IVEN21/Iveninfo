@@ -1,25 +1,20 @@
 import React from "react";
-
-const Footer = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandshake } from "@fortawesome/free-solid-svg-icons";
+import ins_svg from "./assets/instaSVG";
+function Footer(props) {
   return (
-    <div className="footer">
-      <h2 style={{ fontSize: "18px" }}>All Rights Reserved</h2>
-      <a
-        href="https://www.instagram.com/_yesloiven__/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          color: "#cc7e8d",
-          marginLeft: "50px",
-          fontSize: "15px",
-          fontWeight: "100",
-          textDecoration: "none",
-        }}
-      >
-        Instagram
+    <footer className="section-footer">
+      <a href="https://www.instagram.com/_yesloiven__/" target="_blank">
+        {ins_svg()}
       </a>
-    </div>
+      <span>Last Update: 3/20/2021</span>
+
+      <a href="https://app.joinhandshake.com/users/18615520" target="_blank">
+        <FontAwesomeIcon icon={faHandshake} />
+      </a>
+    </footer>
   );
-};
+}
 
 export default Footer;

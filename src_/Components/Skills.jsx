@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 import { useSpring, animated, useTrail } from "react-spring";
-import Skillbar from "../Components/assets/Skillbar";
 import { Waypoint } from "react-waypoint";
+import Skillbar from "../Common/Skillbar";
 
 function Skills({ setActive_nav }) {
   const skills = [
-    { id: 0, name: "C/C++", level: 68 },
-    { id: 2, name: "React", level: 80 },
-    { id: 1, name: "Java", level: 66 },
-    { id: 3, name: "Node.js", level: 82 },
-    { id: 4, name: "HTML", level: 78 },
+    { id: 0, name: "C/C++", level: 60 },
+    { id: 2, name: "Javascript", level: 80 },
+    { id: 1, name: "Java", level: 65 },
+    { id: 3, name: "Node.js", level: 80 },
+    { id: 4, name: "HTML", level: 76 },
     { id: 5, name: "CSS", level: 74 },
-    { id: 6, name: "SQL", level: 76 },
+    { id: 6, name: "SQL", level: 70 },
+    { id: 7, name: "Git", level: 65 },
     { id: 8, name: "Excel", level: 68 },
-    { id: 7, name: "Git", level: 70 },
   ];
   const flag = [
     { id: 1, name: "Terrible" },
     { id: 2, name: "Meh" },
     { id: 3, name: "Decent" },
-    { id: 4, name: "Pros" },
+    { id: 4, name: "Professional" },
   ];
   const [on, seton] = useState(false);
   const flag_animation = useTrail(flag.length, {
@@ -38,13 +38,13 @@ function Skills({ setActive_nav }) {
   });
   const mini_animation = useSpring({
     from: {
-      transform: "translate3d(-110px,-90px,0)",
+      transform: "translate3d(-130px,-110px,0)",
       opacity: 0,
     },
     to: {
       transform: on
-        ? "translate3d(-130px,-130px,0)"
-        : "translate3d(-110px,-90px,0)",
+        ? "translate3d(-150px,-150px,0)"
+        : "translate3d(-130px,-110px,0)",
       opacity: on ? 1 : 0,
     },
   });
@@ -54,22 +54,18 @@ function Skills({ setActive_nav }) {
       bottomOffset="69%"
       onEnter={() => setActive_nav("skills")}
     >
-      <section className="section-skills" id="skills">
-        <div className="section-skills__container">
-          <div className="section-skills__tbn" onClick={() => seton(!on)}>
+      <div className="skills main" id="skills">
+        <div className="skill_grid">
+          <div className="check_skill" onClick={() => seton(!on)}>
             <animated.div style={mini_animation}>
-              These statistics are progressively growing over time.
+              The numbers themself are not important, what's important is these
+              numbers are progressively growing.
             </animated.div>
           </div>
-
-          <section className="section-skills__skillbars">
-            <div className="section-skills__flag-container">
+          <div className="skills_section">
+            <div className="flag_holder">
               {flag_animation.map((props, index) => (
-                <animated.div
-                  className="section-skills__flag"
-                  style={props}
-                  key={index}
-                >
+                <animated.div className="skill_flag" style={props} key={index}>
                   {flag[index].name}
                 </animated.div>
               ))}
@@ -77,9 +73,9 @@ function Skills({ setActive_nav }) {
             {skills.map((item) => (
               <Skillbar key={item.id} item={item} on={on} />
             ))}
-          </section>
+          </div>
         </div>
-      </section>
+      </div>
     </Waypoint>
   );
 }
