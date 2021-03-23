@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import handsome from "../imgs/hs.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Card from "../Components/assets/card";
-import { getInfos } from "../Components/assets/info.js";
+import Card from "./assets/card";
+import { getInfos } from "./assets/info.js";
 const About = ({ setActive_nav }) => {
   const [active_card, set_active_card] = useState(1);
   const numberOf_cards = [1, 2, 3];
@@ -18,18 +18,12 @@ const About = ({ setActive_nav }) => {
       <section className="section-about" id="about">
         <article className="section-about__container">
           <figure className="section-about__figure">
-            <img
-              src={handsome}
-              width="100%"
-              height="100%"
-              alt="Handsome Guy Named Iven"
-            />
+            <img src={handsome} width="100%" height="100%" />
           </figure>
           <figcaption className="section-about__figcaption">
             {numberOf_cards.map((id) => (
               <Card
                 id={id}
-                key={id}
                 active_card={active_card}
                 shift={shift}
                 text={getInfos()[id - 1]}

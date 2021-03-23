@@ -16,7 +16,6 @@ function Card({ id, active_card, shift, text }) {
   return (
     <animated.div
       style={id <= shift ? {} : hover_style}
-      key={id}
       className={`section-about__cards card--${id}`}
       onMouseOver={() => {
         id === active_card && set_card_hover(true);

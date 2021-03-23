@@ -24,7 +24,7 @@ function App() {
       <Skill setActive_nav={setActive_nav}/>
       <Portfolio setActive_nav={setActive_nav}/>
       <Contact setActive_nav={setActive_nav}/>
-      <Footer setActive_nav={setActive_nav}/>
+      <Footer />
     </div>
   );
 }

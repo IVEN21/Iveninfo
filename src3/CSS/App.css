@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Table of Contents 
@@ -22,8 +24,6 @@
 /* 1.Typography */
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 body {
   font-size: 2.4rem;
@@ -190,15 +190,10 @@ p {
     margin-left: 80px;
   }
 }
-@media screen and (max-width: 520px) {
-  .nav__logo {
-    margin-left: 40px;
-  }
-}
 /* 3.Home */
 
 .section-home {
-  transition: all 0.15s;
+  transition: all 0.35s;
   background-image: url(../imgs/lehighuc.jpg);
   background-repeat: no-repeat;
   height: 100vh;
@@ -223,7 +218,7 @@ p {
   position: relative;
 }
 .section-home__header h1 {
-  transition: all 0.1s;
+  transition: all 0.35s;
   background: url(../imgs/txbg.png);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -239,10 +234,8 @@ p {
 
 .section-home__spans {
   justify-self: center;
-  white-space: nowrap;
 }
-.section-home__spans a {
-  text-decoration: none;
+.section-home__spans span {
   margin: 20px;
   padding: 8px;
   transition: all 0.25s;
@@ -251,7 +244,7 @@ p {
   font-size: 2.2rem;
 }
 
-.section-home__spans a::before {
+.section-home__spans span::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -263,10 +256,10 @@ p {
   transform-origin: left;
   transition: all 0.35s ease-in-out;
 }
-.section-home__spans a:nth-child(odd) {
+.section-home__spans span:nth-child(odd) {
   color: rgba(255, 255, 255, 1);
 }
-.section-home__spans a:nth-child(even) {
+.section-home__spans span:nth-child(even) {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -302,21 +295,22 @@ p {
 .section-home__header:hover h1 {
   transform: scale(0.8);
 }
-.section-home__header:hover .section-home__spans a::before {
+.section-home__header:hover .section-home__spans span::before {
   transform: scaleX(1);
 }
 
-.section-home__header:hover .section-home__spans a {
+.section-home__header:hover .section-home__spans span {
   background-color: rgba(0, 0, 0, 0);
   opacity: 1;
 }
-.section-home__spans a:hover {
+.section-home__spans span:hover {
   color: #e6ffe6;
 }
 
 @media screen and (max-width: 1250px) {
   .section-home {
     justify-content: left;
+    background-position: -140px;
   }
   .section-home__header {
     transform: translate3d(0, -100px, 0);
@@ -325,10 +319,6 @@ p {
 @media screen and (max-width: 768px) {
   .section-home {
     background-position: -140px;
-    align-items: unset;
-  }
-  .section-home__header {
-    transform: translate3d(0, 100px, 0);
   }
 }
 @media screen and (max-width: 480px) {
@@ -594,7 +584,7 @@ p {
   font-weight: 700;
   color: #403636;
   width: 170px;
-  height: 130px;
+  height: 150px;
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -676,9 +666,6 @@ p {
   .section-skills__skillbars {
     transform: scale(0.8);
     padding-right: 40px;
-  }
-  .section-skills__tbn div {
-    font-size: 1.4rem;
   }
 }
 
@@ -895,7 +882,7 @@ p {
 .section-contact {
   padding-top: 100px;
   padding-bottom: 100px;
-  height: 900px;
+  height: 1000px;
   background-color: rgb(30, 31, 28);
   position: relative;
   padding-bottom: 100px;

@@ -18,20 +18,17 @@ function Home({ setActive_nav, setNav }) {
           <h1>Iven Zhang</h1>
           <AutoType />
           <div className="section-home__spans">
-            <a href="#about">
+            <span>
               About
               <FontAwesomeIcon
                 icon={faAddressCard}
-                style={{ color: "#fff2e6 ", marginLeft: "7px" }}
+                style={{ color: "#fff2e6 " }}
               />
-            </a>
-            <a href="#skills">
+            </span>
+            <span>
               Skills
-              <FontAwesomeIcon
-                icon={faCogs}
-                style={{ color: "#d4f0d3", marginLeft: "7px" }}
-              />
-            </a>
+              <FontAwesomeIcon icon={faCogs} style={{ color: "#d4f0d3" }} />
+            </span>
           </div>
         </header>
       </section>

@@ -1,5 +1,5 @@
-import React from "react";
-import PortCard from "../Components/assets/PortCard";
+import React, { useState } from "react";
+import PortCard from "./assets/PortCard";
 import pornlo from "../imgs/pornlo.png";
 import gallery from "../imgs/gallery.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

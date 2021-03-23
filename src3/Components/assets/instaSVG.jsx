@@ -1,3 +1,5 @@
+import React from "react";
+
 const ins_svg = () => {
   return (
     <svg
@@ -5,7 +7,7 @@ const ins_svg = () => {
       focusable="false"
       data-prefix="fab"
       data-icon="instagram"
-      className="svg-inline--fa fa-instagram fa-w-14"
+      class="svg-inline--fa fa-instagram fa-w-14"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"

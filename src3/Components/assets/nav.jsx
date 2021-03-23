@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { animated, useSpring } from "react-spring";
-import NavIcon from "../assets/NavIcon";
+import NavIcon from "./NavIcon";
 function Nav({ nav, active_nav }) {
   //listen on window width
   const [width, setWidth] = useState(window.innerWidth);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated, useTrail } from "react-spring";
-import Skillbar from "../Components/assets/Skillbar";
+import Skillbar from "./assets/Skillbar";
 import { Waypoint } from "react-waypoint";
 
 function Skills({ setActive_nav }) {
