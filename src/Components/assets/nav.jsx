@@ -14,7 +14,8 @@ function Nav({ nav, active_nav }) {
     };
   });
   const nav_animation = useSpring({
-    backgroundColor: nav && width > 750 ? "rgba(0,0,0,0)" : "rgba(50,50,50,1)",
+    backgroundColor:
+      nav && width > 750 ? "rgba(0,0,0,0)" : "rgba(48, 42, 39,1)",
     height: nav && width > 750 ? "120px" : "70px",
     config: {
       duration: 200,
