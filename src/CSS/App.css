@@ -334,7 +334,7 @@ p {
 @media screen and (max-width: 480px) {
   .section-home {
     justify-content: center;
-    height: 600px;
+    height: 720px;
   }
   .section-home__header {
     position: absolute;
