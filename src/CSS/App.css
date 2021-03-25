@@ -87,7 +87,7 @@ p {
   margin-left: 7%;
   font-family: "Sacramento", cursive;
   font-size: 5rem;
-  color: white;
+  color: rgb(200, 179, 170);
 }
 .nav-bar__items a {
   color: #d9e6d3;
@@ -112,7 +112,7 @@ p {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #b2dbd4;
+  background-color: rgb(186, 163, 152);
   bottom: 13px;
   left: 50%;
 }
@@ -124,7 +124,7 @@ p {
 /*Icon Menu*/
 .nav-bar__menu {
   align-items: center;
-  background-color: #b2dbd4;
+  background-color: rgb(201, 190, 188);
   border-radius: 50%;
   bottom: -25px;
   color: #4f4440;
@@ -166,10 +166,10 @@ p {
   margin-top: 50px;
 }
 .nav-bar__menu__leaverage a.active {
-  background-color: #fdf5e6;
+  background-color: rgb(201, 190, 188);
 }
 .nav-bar__menu__leaverage a:hover {
-  background-color: #fdf5e6;
+  background-color: rgb(201, 190, 188);
   color: #282e2d;
 }
 
@@ -199,7 +199,7 @@ p {
 
 .section-home {
   transition: all 0.15s;
-  background-image: url(../imgs/lehighuc.jpg);
+  background-image: url(../imgs/lehigh.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -324,42 +324,45 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .section-home {
-    background-position: -140px;
+    background-position: -350px;
     justify-content: center;
     height: 720px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section-home {
+    background-position: -450px;
   }
   .section-home__header {
     position: absolute;
     width: 100%;
     padding: 0;
   }
+  .section-home__header {
+    height: 300px;
+  }
   .section-home__header h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     white-space: nowrap;
   }
 
-  .section-home__header::before {
-    transform: translate3d(-50%, -50%, 0);
-    left: 50%;
-    top: 40%;
-    transition: all 0.35s;
-  }
+  .section-home__header::before,
   .section-home__header::after {
     transform: translate3d(-50%, -50%, 0);
     left: 50%;
-    top: 40%;
+    top: 50%;
     transition: all 0.35s;
   }
 }
-
 /* 4.About */
 
 .section-about {
   overflow: hidden;
   height: 900px;
-  background-color: rgb(30, 31, 28);
+  background-color: rgb(27, 23, 24);
   position: relative;
   display: flex;
   justify-content: center;
@@ -410,7 +413,7 @@ p {
 }
 
 .card--1 {
-  background-color: rgb(30, 31, 28);
+  background-color: rgb(27, 23, 24);
 }
 .card--1::before {
   opacity: 0.3;
@@ -421,7 +424,7 @@ p {
 .card--2 {
   transform: rotate(2deg) translate3d(280px, 0, 0) scale(0.5);
   z-index: 3;
-  background-color: rgb(30, 31, 28);
+  background-color: rgb(27, 23, 24);
 }
 
 .card--2::before {
@@ -446,7 +449,7 @@ p {
   font-weight: 600;
   color: white;
   font-size: 2.7rem;
-
+  white-space: nowrap;
   margin: 2rem;
 }
 .section-about__cards__p {
@@ -509,7 +512,7 @@ p {
 .section-skills {
   padding-top: 50px;
   height: 700px;
-  background-color: rgb(30, 31, 28);
+  background-color: rgb(27, 23, 24);
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -682,7 +685,7 @@ p {
 /* 6.Portfolio */
 .section-portfolio {
   padding-top: 80px;
-  background-color: rgb(30, 31, 28);
+  background-color: rgb(27, 23, 24);
   height: 800px;
   overflow: hidden;
 }
@@ -886,7 +889,7 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
   height: 1000px;
-  background-color: rgb(30, 31, 28);
+  background-color: rgb(27, 23, 24);
   position: relative;
 }
 .section-contact__form-grid {
