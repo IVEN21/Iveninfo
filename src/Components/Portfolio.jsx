@@ -27,7 +27,7 @@ function Portfolio({ setActive_nav }) {
     >
       <section className="section-portfolio" id="portfolio">
         <div className="section-portfolio__container">
-          <header className="section-portfolio__header" data-aos="fade-right">
+          <header className="section-portfolio__header">
             <h2>
               <FontAwesomeIcon icon={faSeedling} style={{ color: "#e5f2e1" }} />{" "}
               My Projects
@@ -36,6 +36,7 @@ function Portfolio({ setActive_nav }) {
           </header>
 
           <PortCard
+            locked={true}
             label="Pornlo"
             img={pornlo}
             url="https://pornlo.herokuapp.com/"

@@ -67,11 +67,7 @@ function Skills({ setActive_nav }) {
             </animated.div>
           </div>
 
-          <section
-            className="section-skills__skillbars"
-            data-aos="fade-left"
-            data-aos-duration="300"
-          >
+          <section className="section-skills__skillbars">
             <div className="section-skills__flag-container">
               {flag_animation.map((props, index) => (
                 <animated.div
