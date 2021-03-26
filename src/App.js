@@ -10,11 +10,12 @@ import Nav from './Components/assets/nav'
 import Portfolio from "./Components/Portfolio"
 import React, { useState } from "react";
 import Skill from "./Components/Skills"
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   const [nav, setNav] = useState(false);
   const [active_nav, setActive_nav] = useState("");
-
+  AOS.init();
 
   return (
     <div className="App">

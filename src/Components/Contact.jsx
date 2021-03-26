@@ -95,7 +95,7 @@ class Contact extends Component {
               <ClimbingBoxLoader color="#d1f7c6" />
             </div>
           )}
-          <div className="section-contact__form-grid">
+          <div className="section-contact__form-grid" data-aos="fade-up">
             <header className="section-contact__header">
               <h1>Say Hello!</h1>
             </header>

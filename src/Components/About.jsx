@@ -17,7 +17,11 @@ const About = ({ setActive_nav }) => {
     >
       <section className="section-about" id="about">
         <article className="section-about__container">
-          <figure className="section-about__figure">
+          <figure
+            className="section-about__figure"
+            data-aos="zoom-out"
+            data-aos-duration="500"
+          >
             <img
               src={handsome}
               width="100%"
@@ -25,7 +29,11 @@ const About = ({ setActive_nav }) => {
               alt="Handsome Guy Named Iven"
             />
           </figure>
-          <figcaption className="section-about__figcaption">
+          <figcaption
+            className="section-about__figcaption"
+            data-aos="flip-right"
+            data-aos-duration="500"
+          >
             {numberOf_cards.map((id) => (
               <Card
                 id={id}

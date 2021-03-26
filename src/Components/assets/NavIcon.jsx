@@ -18,7 +18,7 @@ function IconNav({ active_nav }) {
 
   const menu_bar_animation = useTransition(menu_open, null, {
     from: { height: 0 },
-    enter: { height: 330 },
+    enter: { height: 340 },
     leave: { height: 0 },
     config: {
       mass: 1,

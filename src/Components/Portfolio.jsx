@@ -27,7 +27,7 @@ function Portfolio({ setActive_nav }) {
     >
       <section className="section-portfolio" id="portfolio">
         <div className="section-portfolio__container">
-          <header className="section-portfolio__header">
+          <header className="section-portfolio__header" data-aos="fade-right">
             <h2>
               <FontAwesomeIcon icon={faSeedling} style={{ color: "#e5f2e1" }} />{" "}
               My Projects
