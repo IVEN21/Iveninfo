@@ -121,7 +121,7 @@ class Contact extends Component {
               )
             )}
             {this.state.error && (
-              <div className="section-contact_form-error">
+              <div className="form-error">
                 <p>
                   <FontAwesomeIcon icon={faExclamationCircle} />
                   {this.state.error}

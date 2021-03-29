@@ -58,6 +58,23 @@ p {
   margin-top: 0;
 }
 
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: transparent;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 2rem;
+  height: 100%;
+  outline: 0;
+  padding: 0 5px;
+  position: relative;
+  width: 100%;
+}
 /* 2.Nav */
 
 .nav-bar {
@@ -813,7 +830,27 @@ p {
 .section-portfolio__container a:hover {
   color: #faf0e6;
 }
+.section-portfolio__card__input-field input {
+  grid-area: input;
+  font-size: 1.7rem;
+  width: 110px;
+  padding: 5px;
+}
+.section-portfolio__card__input-field p {
+  background-color: rgb(229, 242, 225);
+  display: inline-block;
+  width: fit-content;
+  padding: 5px;
+  font-size: 1.5rem;
+  color: rgb(30, 36, 31);
+  border-radius: 2px;
+  margin-left: 10px;
+}
 
+.section-portfolio__card__input-field a {
+  grid-area: btn;
+  padding: 5px;
+}
 .card__text_front {
   backface-visibility: hidden;
   color: white;
@@ -938,23 +975,6 @@ p {
   z-index: 2;
 }
 
-.section-contact__form-grid div input,
-.section-contact__form-grid div textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-  background-color: transparent;
-  background: transparent;
-  border-radius: 0;
-  border: 0;
-  border-bottom: 1px solid white;
-  color: white;
-  font-size: 2rem;
-  height: 100%;
-  outline: 0;
-  padding: 0 5px;
-  position: relative;
-  width: 100%;
-}
 .section-contact__form-textarea,
 .section-contact__form-input {
   position: relative;
@@ -1047,13 +1067,13 @@ p {
 .form-btn:hover::after {
   transform: rotate(-40deg);
 }
-.section-contact_form-error {
+.form-error {
   font-size: 2rem;
   color: #ae1800;
   background-color: #fdd4cd;
   height: fit-content;
 }
-.section-contact_form-error p {
+.form-error p {
   padding: 10px;
   margin: 0;
 }

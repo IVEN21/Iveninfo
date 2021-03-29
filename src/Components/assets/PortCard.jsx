@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 
-const PortCard = ({ label, img, url, attr, description }) => {
+const PortCard = ({ label, img, url, attr, description, locked }) => {
   const [flip, setflip] = useState(false);
+  const [code, setCode] = useState("");
+  const typeCode = (e) => {
+    setCode(e);
+    if (code === "2312") {
+      window.open("https://pornlo.herokuapp.com/", "_blank");
+      setCode("");
+    }
+  };
 
   return (
     <div
@@ -27,14 +35,26 @@ const PortCard = ({ label, img, url, attr, description }) => {
           </p>
         </div>
       </div>
-      <a
-        href={url}
-        rel="noopener noreferrer"
-        target="_blank"
-        style={{ fontSize: "21px" }}
-      >
-        Link Here
-      </a>
+      {locked ? (
+        <div className="section-portfolio__card__input-field">
+          <input
+            placeholder="Enter Code"
+            onChange={({ currentTarget: { value } }) => typeCode(value)}
+            type="password"
+            value={code}
+          />
+          {code && <p>Auto redirect with correct code.</p>}
+        </div>
+      ) : (
+        <a
+          href={url}
+          rel="noopener noreferrer"
+          target="_blank"
+          style={{ fontSize: "21px" }}
+        >
+          Enter
+        </a>
+      )}
     </div>
   );
 };
